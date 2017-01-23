@@ -720,7 +720,7 @@
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYf-z6-qJE">
                                                                     <rect key="frame" x="0.0" y="0.0" width="265" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="cell" id="x6n-fe-zrO">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" placeholderString="cell" id="x6n-fe-zrO">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -728,7 +728,7 @@
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
-                                                                <outlet property="textField" destination="OYf-z6-qJE" id="Lug-dj-KVE"/>
+                                                                <outlet property="textField" destination="OYf-z6-qJE" id="kux-5l-Dee"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -758,7 +758,20 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121" y="666"/>
+            <point key="canvasLocation" x="17" y="711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UIb-LV-pOZ">
+            <objects>
+                <viewController id="Y6k-kH-SXG" sceneMemberID="viewController">
+                    <view key="view" id="Xui-Be-LFg">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="58Q-9v-wOd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="1140"/>
         </scene>
     </scenes>
 </document>

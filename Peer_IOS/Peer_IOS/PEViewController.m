@@ -13,7 +13,6 @@
 @interface PEViewController () <MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate>
 
 @property (nonatomic, strong) MCSession *session;
-@property (nonatomic, strong) MCPeerID  *peerId;
 @property (nonatomic, strong) MCNearbyServiceAdvertiser *serviceAdvertiser;
 @property (nonatomic, strong) MCNearbyServiceBrowser *serviceBrowser;
 
@@ -54,11 +53,7 @@
 - (void)browser:(MCNearbyServiceBrowser *)browser foundPeer:(MCPeerID *)peerID withDiscoveryInfo:(NSDictionary<NSString *,NSString *> *)info
 {
     NSLog(@"info %@ peerId %@", info, peerID.displayName);
-    
-    [self.serviceBrowser stopBrowsingForPeers];
-    
-    self.peerId = peerID;
-    
+
     [self.peerItems addObject:peerID];
     
     [self.tableView reloadData];
@@ -71,9 +66,9 @@
 
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID
 {
-    [self.serviceBrowser startBrowsingForPeers];
+    [self.peerItems removeObject:peerID];
     
-    self.peerId = nil;
+    [self.tableView reloadData];
     NSLog(@"MCNearbyServiceBrowser lostPeer:%@", peerID);
 }
 

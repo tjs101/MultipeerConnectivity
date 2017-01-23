@@ -299,6 +299,7 @@
 				669FF74E1E35A99000C441F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

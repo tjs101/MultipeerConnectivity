@@ -12,7 +12,6 @@
 @interface ViewController ()<MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate, NSTableViewDataSource ,NSTableViewDelegate>
 
 @property (nonatomic, strong) MCSession *session;
-@property (nonatomic, strong) MCPeerID  *peerId;
 @property (nonatomic, strong) MCNearbyServiceAdvertiser *serviceAdvertiser;
 @property (nonatomic, strong) MCNearbyServiceBrowser *serviceBrowser;
 
@@ -55,10 +54,8 @@
 {
     NSLog(@"info %@ peerId %@", info, peerID.displayName);
     
-    [self.serviceBrowser stopBrowsingForPeers];
-    
-    self.peerId = peerID;
-    
+//    [self.serviceBrowser stopBrowsingForPeers];
+
     [self.peerItems addObject:peerID];
 
     [self.tableView reloadData];
@@ -71,10 +68,10 @@
 
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID
 {
-    [self.serviceBrowser startBrowsingForPeers];
-    
-    self.peerId = nil;
+    [self.peerItems removeObject:peerID];
     NSLog(@"MCNearbyServiceBrowser lostPeer:%@", peerID);
+    
+    [self.tableView reloadData];
 }
 
 #pragma mark - MCNearbyServiceAdvertiserDelegate
@@ -84,12 +81,20 @@
     NSLog(@"didReceiveInvitationFromPeer %@", peerID.displayName);
     NSString *message = [NSString stringWithFormat:@"%@连接您的设备", peerID.displayName];
     
-//    HAlertController *alertCtrl = [HAlertController alertWithTitle:@"提示" message:message cancelButtonItem:[HAlertAction actionWithTitle:@"接受" handler:^(NSString * _Nonnull title) {
-//        invitationHandler(true, self.session);
-//    }] destructiveButtonItem:[HAlertAction actionWithTitle:@"拒绝" handler:^(NSString * _Nonnull title) {
-//        invitationHandler(false, self.session);
-//    }]];
-//    [alertCtrl showIn:self];
+    NSAlert *alert = [[NSAlert alloc] init];
+    alert.messageText = message;
+    [alert addButtonWithTitle:@"接受"];
+    [alert addButtonWithTitle:@"拒绝"];
+    [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
+        
+        if (returnCode == NSModalResponseOK) {
+            invitationHandler(true, self.session);
+        }
+        else {
+            invitationHandler(true, self.session);
+        }
+    }];
+
 }
 
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didNotStartAdvertisingPeer:(NSError *)error
@@ -102,6 +107,9 @@
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state
 {
     NSLog(@"MCSession didChangeState %@ %d", peerID.displayName, state);
+    if (state == MCSessionStateConnected) {
+        
+    }
 }
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
