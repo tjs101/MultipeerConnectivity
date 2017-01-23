@@ -1,0 +1,4 @@
+platform :osx, ’10.9’
+target ‘Peer_Mac’ do
+pod 'MBProgressHUD-OSX'
+end

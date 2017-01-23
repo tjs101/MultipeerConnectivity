@@ -12,9 +12,11 @@
 		669FF7431E35A99000C441F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 669FF7421E35A99000C441F0 /* ViewController.m */; };
 		669FF7451E35A99000C441F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669FF7441E35A99000C441F0 /* Assets.xcassets */; };
 		669FF7481E35A99000C441F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669FF7461E35A99000C441F0 /* Main.storyboard */; };
+		8AC553246A21634E3C57C36B /* libPods-Peer_Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D9FA5C251A41D5399E53C3 /* libPods-Peer_Mac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35F77F907D07C4494B829670 /* Pods-Peer_Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer_Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Peer_Mac/Pods-Peer_Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		669FF7381E35A99000C441F0 /* Peer_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peer_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		669FF73B1E35A99000C441F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		669FF73C1E35A99000C441F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		669FF7441E35A99000C441F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669FF7471E35A99000C441F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		669FF7491E35A99000C441F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D9FA5C251A41D5399E53C3 /* libPods-Peer_Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Peer_Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABF9A96BFACE807BFE71BC1 /* Pods-Peer_Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer_Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-Peer_Mac/Pods-Peer_Mac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC553246A21634E3C57C36B /* libPods-Peer_Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				669FF73A1E35A99000C441F0 /* Peer_Mac */,
 				669FF7391E35A99000C441F0 /* Products */,
+				90D4800C4AA11535763B4246 /* Pods */,
+				AA880E7A8260BD1C377A6D14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		90D4800C4AA11535763B4246 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35F77F907D07C4494B829670 /* Pods-Peer_Mac.debug.xcconfig */,
+				DABF9A96BFACE807BFE71BC1 /* Pods-Peer_Mac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA880E7A8260BD1C377A6D14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88D9FA5C251A41D5399E53C3 /* libPods-Peer_Mac.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 669FF74C1E35A99000C441F0 /* Build configuration list for PBXNativeTarget "Peer_Mac" */;
 			buildPhases = (
+				C50799011E808E8AE6463F25 /* [CP] Check Pods Manifest.lock */,
 				669FF7341E35A99000C441F0 /* Sources */,
 				669FF7351E35A99000C441F0 /* Frameworks */,
 				669FF7361E35A99000C441F0 /* Resources */,
+				2BD29F7E0E813BBD1D43A18F /* [CP] Embed Pods Frameworks */,
+				81FB3EB1CA9257C083BFD8DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +168,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD29F7E0E813BBD1D43A18F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Peer_Mac/Pods-Peer_Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81FB3EB1CA9257C083BFD8DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Peer_Mac/Pods-Peer_Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50799011E808E8AE6463F25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		669FF7341E35A99000C441F0 /* Sources */ = {
@@ -256,12 +331,14 @@
 		};
 		669FF74D1E35A99000C441F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F77F907D07C4494B829670 /* Pods-Peer_Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4J67FTSTQJ;
 				INFOPLIST_FILE = Peer_Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.connectivity.Peer-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -269,12 +346,14 @@
 		};
 		669FF74E1E35A99000C441F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DABF9A96BFACE807BFE71BC1 /* Pods-Peer_Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4J67FTSTQJ;
 				INFOPLIST_FILE = Peer_Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.connectivity.Peer-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

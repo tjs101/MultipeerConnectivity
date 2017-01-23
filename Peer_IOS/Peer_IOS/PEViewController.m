@@ -10,6 +10,8 @@
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import <HAlertController/HAlertController.h>
 
+static NSString *NAME_TAG = @"__________";
+
 @interface PEViewController () <MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate>
 
 @property (nonatomic, strong) MCSession *session;
@@ -33,7 +35,9 @@
 
 - (void)observerNearBy
 {
-    MCPeerID *sessionPeerId = [[MCPeerID alloc] initWithDisplayName:[UIDevice currentDevice].name];
+    NSString *name = [NSString stringWithFormat:@"%@%@%@", [UIDevice currentDevice].name, NAME_TAG, @"IOS"];
+    
+    MCPeerID *sessionPeerId = [[MCPeerID alloc] initWithDisplayName:name];
     
     self.session = [[MCSession alloc] initWithPeer:sessionPeerId securityIdentity:nil encryptionPreference:MCEncryptionRequired];
     self.session.delegate = self;
@@ -46,6 +50,18 @@
     self.serviceBrowser.delegate = self;
     [self.serviceBrowser startBrowsingForPeers];
     
+}
+
+#pragma mark - 解析名字
+
+- (NSString *)nameForPeer:(MCPeerID *)peer
+{
+    return [[peer.displayName componentsSeparatedByString:NAME_TAG] firstObject];
+}
+
+- (NSString *)osForPeer:(MCPeerID *)peer
+{
+    return [[peer.displayName componentsSeparatedByString:NAME_TAG] lastObject];
 }
 
 #pragma mark - MCNearbyServiceBrowserDelegate
@@ -132,7 +148,7 @@
     }
     
     MCPeerID *peer = [self.peerItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = peer.displayName;
+    cell.textLabel.text = [self nameForPeer:peer];
     
     return cell;
 }
