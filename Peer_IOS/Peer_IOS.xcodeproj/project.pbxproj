@@ -11,6 +11,7 @@
 		669FF7151E359E3600C441F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 669FF7141E359E3600C441F0 /* AppDelegate.m */; };
 		669FF71D1E359E3600C441F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669FF71C1E359E3600C441F0 /* Assets.xcassets */; };
 		669FF7201E359E3600C441F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669FF71E1E359E3600C441F0 /* LaunchScreen.storyboard */; };
+		669FF72E1E35A08F00C441F0 /* PEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 669FF72D1E35A08F00C441F0 /* PEViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		669FF71C1E359E3600C441F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669FF71F1E359E3600C441F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		669FF7211E359E3600C441F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		669FF72C1E35A08F00C441F0 /* PEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEViewController.h; sourceTree = "<group>"; };
+		669FF72D1E35A08F00C441F0 /* PEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			children = (
 				669FF7131E359E3600C441F0 /* AppDelegate.h */,
 				669FF7141E359E3600C441F0 /* AppDelegate.m */,
+				669FF72B1E35A08000C441F0 /* ViewController */,
 				669FF71C1E359E3600C441F0 /* Assets.xcassets */,
 				669FF71E1E359E3600C441F0 /* LaunchScreen.storyboard */,
 				669FF7211E359E3600C441F0 /* Info.plist */,
@@ -69,6 +73,15 @@
 				669FF7111E359E3600C441F0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		669FF72B1E35A08000C441F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				669FF72C1E35A08F00C441F0 /* PEViewController.h */,
+				669FF72D1E35A08F00C441F0 /* PEViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				669FF7151E359E3600C441F0 /* AppDelegate.m in Sources */,
+				669FF72E1E35A08F00C441F0 /* PEViewController.m in Sources */,
 				669FF7121E359E3600C441F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +308,7 @@
 				669FF7261E359E3600C441F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
