@@ -10,6 +10,7 @@
 
 @interface ViewController : NSViewController
 
+@property (nonatomic, assign) IBOutlet NSTableView *tableView;/**<解释>*/
 
 @end
 

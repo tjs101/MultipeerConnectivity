@@ -1,0 +1,12 @@
+PODS:
+  - HAlertController (1.0.0)
+
+DEPENDENCIES:
+  - HAlertController
+
+SPEC CHECKSUMS:
+  HAlertController: c612130388b41d859eab051e7cb04c06e638c40f
+
+PODFILE CHECKSUM: 06585fe55dd7723204331fe52d629eddd9a5cc28
+
+COCOAPODS: 1.2.0.beta.1

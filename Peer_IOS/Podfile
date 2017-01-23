@@ -1,0 +1,4 @@
+platform :ios, '8.0'
+target ‘Peer_IOS’ do
+pod 'HAlertController'
+end

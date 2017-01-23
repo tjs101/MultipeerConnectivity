@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PEViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    PEViewController *viewCtrl = [[PEViewController alloc] init];
+    
+    UINavigationController *navCtrl = [[UINavigationController alloc] initWithRootViewController:viewCtrl];
+    self.window.rootViewController = navCtrl;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

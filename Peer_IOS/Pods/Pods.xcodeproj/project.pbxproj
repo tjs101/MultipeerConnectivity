@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03CE6AD293ADDF4D59A83B8A17EA8054 /* UIActionSheet+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = C85FB1B4BA2222FAAD0EC69DFD3FCDAF /* UIActionSheet+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0B8E8B76FA3975BCA63BA8233D232708 /* HAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = C66E3585DD928AB39DECA6B73F87BE93 /* HAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D966580833613DB0E251CCADED06851 /* HAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD6585086C23EF1F6A4F6E349BF67B0 /* HAlertAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2FA267F74C38830C14360BC24017508A /* Pods-Peer_IOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4417E2F6C74841D8A07EE7C1C7ACDC4 /* Pods-Peer_IOS-dummy.m */; };
+		532FFA77D14BF45968944F299207CE1A /* UIAlertController+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF944B8D01EA9F0D7ED11A9F49CE58 /* UIAlertController+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63B32C8BCC63607FC3B7D3577F6E24E6 /* HAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 014557F9BF13EC6E19337A13038BD6FD /* HAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64918D8E39F8CF49E0F467C7733ED8BD /* UIAlertView+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDDB681FC8CCCE59BC899E959A01C3D /* UIAlertView+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		682D491DC5A374539AB13769FE50A35F /* UIAlertView+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = BA292A41E64C8219D8A3924A2ACB2F77 /* UIAlertView+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9926A023781D640EC3914542278A5066 /* UIAlertController+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F06238B1EC624ABC2B1154189F89244 /* UIAlertController+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992913734D330D3BF55E0EF1256D74F8 /* UIActionSheet+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = C0BA5BB0E7D77FABF24C9538BECFBADC /* UIActionSheet+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E5655780DF60DF4D8248665F7961E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AB786F9D9E0D79F1B213F58F77D04536 /* HAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461A9960F55A2EDA9B4D01F4E976BEDB /* HAlertController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB4C1B9422744C2F5984AA0A3B22755B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FC6381389F09967F7CB02D45B718169B /* HAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96137A077F20D4FABA039DA763BF99FB /* HAlertController-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E692C0ACFF466EA139D3A6D6C099818A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC89226424524D953B22704CA568FA9A;
+			remoteInfo = HAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014557F9BF13EC6E19337A13038BD6FD /* HAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HAlertAction.h; path = HAlertController/HAlertAction.h; sourceTree = "<group>"; };
+		0BD6585086C23EF1F6A4F6E349BF67B0 /* HAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HAlertAction.m; path = HAlertController/HAlertAction.m; sourceTree = "<group>"; };
+		12990326F06E075BB3F1E1D18ED7C8F6 /* Pods-Peer_IOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Peer_IOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		4430743BE4ED0643DB6C94FAEAF065A4 /* Pods-Peer_IOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Peer_IOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		461A9960F55A2EDA9B4D01F4E976BEDB /* HAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HAlertController.m; path = HAlertController/HAlertController.m; sourceTree = "<group>"; };
+		4FBF944B8D01EA9F0D7ED11A9F49CE58 /* UIAlertController+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+HWW.m"; path = "HAlertController/UIAlertController+HWW.m"; sourceTree = "<group>"; };
+		66D8A50DC4C8A67185B2BEF257673C72 /* Pods-Peer_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peer_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HAlertController.xcconfig; sourceTree = "<group>"; };
+		88A1FDE5D2180ACCF6530B02E39AE973 /* Pods-Peer_IOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Peer_IOS-frameworks.sh"; sourceTree = "<group>"; };
+		88B2528B8D2FD6FF73A34ABC1F082604 /* HAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HAlertController-prefix.pch"; sourceTree = "<group>"; };
+		8A3B618BF88CD6FCCD129E5A06080E47 /* Pods-Peer_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peer_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8F06238B1EC624ABC2B1154189F89244 /* UIAlertController+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+HWW.h"; path = "HAlertController/UIAlertController+HWW.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96137A077F20D4FABA039DA763BF99FB /* HAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HAlertController-dummy.m"; sourceTree = "<group>"; };
+		A4417E2F6C74841D8A07EE7C1C7ACDC4 /* Pods-Peer_IOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peer_IOS-dummy.m"; sourceTree = "<group>"; };
+		BA292A41E64C8219D8A3924A2ACB2F77 /* UIAlertView+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+HWW.h"; path = "HAlertController/UIAlertView+HWW.h"; sourceTree = "<group>"; };
+		BBDDB681FC8CCCE59BC899E959A01C3D /* UIAlertView+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+HWW.m"; path = "HAlertController/UIAlertView+HWW.m"; sourceTree = "<group>"; };
+		BF30A169685DB51687394C498C73461B /* libPods-Peer_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Peer_IOS.a"; path = "libPods-Peer_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BA5BB0E7D77FABF24C9538BECFBADC /* UIActionSheet+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+HWW.h"; path = "HAlertController/UIActionSheet+HWW.h"; sourceTree = "<group>"; };
+		C66E3585DD928AB39DECA6B73F87BE93 /* HAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HAlertController.h; path = HAlertController/HAlertController.h; sourceTree = "<group>"; };
+		C85FB1B4BA2222FAAD0EC69DFD3FCDAF /* UIActionSheet+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+HWW.m"; path = "HAlertController/UIActionSheet+HWW.m"; sourceTree = "<group>"; };
+		CBA9D6039D0B4CAE35DAB85BC34BF7F6 /* libHAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHAlertController.a; path = libHAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E4E7B3DD1FEBE2125BFAD672CDE0AFAA /* Pods-Peer_IOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Peer_IOS-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E2FC407748BD01E7EE0EF2691AF33E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C1B9422744C2F5984AA0A3B22755B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A0F43346FF0A47339349CA1704FADF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E5655780DF60DF4D8248665F7961E60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45C41C2A2C76CE49A0D1F6965F12543E /* HAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				014557F9BF13EC6E19337A13038BD6FD /* HAlertAction.h */,
+				0BD6585086C23EF1F6A4F6E349BF67B0 /* HAlertAction.m */,
+				C66E3585DD928AB39DECA6B73F87BE93 /* HAlertController.h */,
+				461A9960F55A2EDA9B4D01F4E976BEDB /* HAlertController.m */,
+				C0BA5BB0E7D77FABF24C9538BECFBADC /* UIActionSheet+HWW.h */,
+				C85FB1B4BA2222FAAD0EC69DFD3FCDAF /* UIActionSheet+HWW.m */,
+				8F06238B1EC624ABC2B1154189F89244 /* UIAlertController+HWW.h */,
+				4FBF944B8D01EA9F0D7ED11A9F49CE58 /* UIAlertController+HWW.m */,
+				BA292A41E64C8219D8A3924A2ACB2F77 /* UIAlertView+HWW.h */,
+				BBDDB681FC8CCCE59BC899E959A01C3D /* UIAlertView+HWW.m */,
+				B37BE825700E0DDA13BF76583DE05FDC /* Support Files */,
+			);
+			name = HAlertController;
+			path = HAlertController;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A8AC5031A31B6F38F71687FF2E3CA14C /* Pods */,
+				C70627831DB5144312D9100FEDB3905A /* Products */,
+				D17CEE183455C934197CDCB9B292478E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		90642E2F446D54A07BAB29F3A2EDB241 /* Pods-Peer_IOS */ = {
+			isa = PBXGroup;
+			children = (
+				4430743BE4ED0643DB6C94FAEAF065A4 /* Pods-Peer_IOS-acknowledgements.markdown */,
+				12990326F06E075BB3F1E1D18ED7C8F6 /* Pods-Peer_IOS-acknowledgements.plist */,
+				A4417E2F6C74841D8A07EE7C1C7ACDC4 /* Pods-Peer_IOS-dummy.m */,
+				88A1FDE5D2180ACCF6530B02E39AE973 /* Pods-Peer_IOS-frameworks.sh */,
+				E4E7B3DD1FEBE2125BFAD672CDE0AFAA /* Pods-Peer_IOS-resources.sh */,
+				8A3B618BF88CD6FCCD129E5A06080E47 /* Pods-Peer_IOS.debug.xcconfig */,
+				66D8A50DC4C8A67185B2BEF257673C72 /* Pods-Peer_IOS.release.xcconfig */,
+			);
+			name = "Pods-Peer_IOS";
+			path = "Target Support Files/Pods-Peer_IOS";
+			sourceTree = "<group>";
+		};
+		A8AC5031A31B6F38F71687FF2E3CA14C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45C41C2A2C76CE49A0D1F6965F12543E /* HAlertController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B37BE825700E0DDA13BF76583DE05FDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */,
+				96137A077F20D4FABA039DA763BF99FB /* HAlertController-dummy.m */,
+				88B2528B8D2FD6FF73A34ABC1F082604 /* HAlertController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HAlertController";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C70627831DB5144312D9100FEDB3905A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBA9D6039D0B4CAE35DAB85BC34BF7F6 /* libHAlertController.a */,
+				BF30A169685DB51687394C498C73461B /* libPods-Peer_IOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D17CEE183455C934197CDCB9B292478E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90642E2F446D54A07BAB29F3A2EDB241 /* Pods-Peer_IOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		546AF3638DF634182AC5190FF9E57415 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B32C8BCC63607FC3B7D3577F6E24E6 /* HAlertAction.h in Headers */,
+				0B8E8B76FA3975BCA63BA8233D232708 /* HAlertController.h in Headers */,
+				992913734D330D3BF55E0EF1256D74F8 /* UIActionSheet+HWW.h in Headers */,
+				9926A023781D640EC3914542278A5066 /* UIAlertController+HWW.h in Headers */,
+				682D491DC5A374539AB13769FE50A35F /* UIAlertView+HWW.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		033338EB15AE808A1B7110377EA3802F /* Pods-Peer_IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BB1B5AD37DBC171A98B3FE9F23CAD9D /* Build configuration list for PBXNativeTarget "Pods-Peer_IOS" */;
+			buildPhases = (
+				A4ED3EE7B098C0D015021164D194C972 /* Sources */,
+				1E2FC407748BD01E7EE0EF2691AF33E8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE85FD696DBA8BB3D999233C6CDBDB6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Peer_IOS";
+			productName = "Pods-Peer_IOS";
+			productReference = BF30A169685DB51687394C498C73461B /* libPods-Peer_IOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC89226424524D953B22704CA568FA9A /* HAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D25758E843D847AB87CCED847A54EC2 /* Build configuration list for PBXNativeTarget "HAlertController" */;
+			buildPhases = (
+				F06C0CABED1C21DFAA0425A82489CC89 /* Sources */,
+				9A0F43346FF0A47339349CA1704FADF0 /* Frameworks */,
+				546AF3638DF634182AC5190FF9E57415 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HAlertController;
+			productName = HAlertController;
+			productReference = CBA9D6039D0B4CAE35DAB85BC34BF7F6 /* libHAlertController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C70627831DB5144312D9100FEDB3905A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC89226424524D953B22704CA568FA9A /* HAlertController */,
+				033338EB15AE808A1B7110377EA3802F /* Pods-Peer_IOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4ED3EE7B098C0D015021164D194C972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA267F74C38830C14360BC24017508A /* Pods-Peer_IOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06C0CABED1C21DFAA0425A82489CC89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D966580833613DB0E251CCADED06851 /* HAlertAction.m in Sources */,
+				FC6381389F09967F7CB02D45B718169B /* HAlertController-dummy.m in Sources */,
+				AB786F9D9E0D79F1B213F58F77D04536 /* HAlertController.m in Sources */,
+				03CE6AD293ADDF4D59A83B8A17EA8054 /* UIActionSheet+HWW.m in Sources */,
+				532FFA77D14BF45968944F299207CE1A /* UIAlertController+HWW.m in Sources */,
+				64918D8E39F8CF49E0F467C7733ED8BD /* UIAlertView+HWW.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE85FD696DBA8BB3D999233C6CDBDB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HAlertController;
+			target = BC89226424524D953B22704CA568FA9A /* HAlertController */;
+			targetProxy = E692C0ACFF466EA139D3A6D6C099818A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		08A3BC2E3A3369C4A0266C3FBCCFCC6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HAlertController/HAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8721953D174FFD26AB35AA6C58320033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3B618BF88CD6FCCD129E5A06080E47 /* Pods-Peer_IOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A68614715F3D8E0696B7CF398D6C8224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D8A50DC4C8A67185B2BEF257673C72 /* Pods-Peer_IOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DAEB0E7217D911F64361DA031C4EE2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HAlertController/HAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BB1B5AD37DBC171A98B3FE9F23CAD9D /* Build configuration list for PBXNativeTarget "Pods-Peer_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8721953D174FFD26AB35AA6C58320033 /* Debug */,
+				A68614715F3D8E0696B7CF398D6C8224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D25758E843D847AB87CCED847A54EC2 /* Build configuration list for PBXNativeTarget "HAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAEB0E7217D911F64361DA031C4EE2C3 /* Debug */,
+				08A3BC2E3A3369C4A0266C3FBCCFCC6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

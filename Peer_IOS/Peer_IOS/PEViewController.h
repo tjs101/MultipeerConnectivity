@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PEViewController : UIViewController
+@interface PEViewController : UITableViewController
 
 @end
