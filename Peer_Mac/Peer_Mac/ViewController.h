@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) IBOutlet NSTableView *chatTableView;/**<解释>*/
 @property (nonatomic, assign) IBOutlet NSTextField *inputField;/**<解释>*/
+@property (nonatomic, assign) IBOutlet NSTextField *chatNumLabel;/**<解释>*/
+
 @property (nonatomic, strong) IBOutlet NSButton *sendBtn;/**<解释>*/
 
 @end

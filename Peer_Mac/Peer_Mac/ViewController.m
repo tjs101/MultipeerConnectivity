@@ -10,7 +10,7 @@
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import <MBProgressHUD-OSX/MBProgressHUD.h>
 
-@interface ViewController ()<MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate, NSTableViewDataSource ,NSTableViewDelegate>
+@interface ViewController ()<MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate, NSTableViewDataSource ,NSTableViewDelegate, NSTextFieldDelegate>
 
 @property (nonatomic, strong) MCSession *session;
 @property (nonatomic, strong) MCNearbyServiceAdvertiser *serviceAdvertiser;
@@ -39,28 +39,47 @@
     self.statusItems = [NSMutableArray array];
     
     self.chatItems = [NSMutableArray array];
-
+    
     [self observerNearBy];
+}
+
+#pragma mark - update num
+
+- (void)updateChatNum
+{
+    self.chatNumLabel.stringValue = [NSString stringWithFormat:@"(%@)", @([self.bindPeerItems count])];
 }
 
 #pragma mark - IBAction
 
 - (IBAction)onSendClick:(id)sender
 {
+    if (_inputField.stringValue.length == 0) {
+        return;
+    }
     
-    NSData *data = [_inputField.stringValue dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSError *error = nil;
-    BOOL success = [self.session sendData:data toPeers:self.bindPeerItems withMode:MCSessionSendDataReliable error:&error];
-    if (!success) {
-        NSLog(@"error %@", error);
+    if ([self.bindPeerItems count] > 0) {
+        NSData *data = [_inputField.stringValue dataUsingEncoding:NSUTF8StringEncoding];
+        
+        NSError *error = nil;
+        BOOL success = [self.session sendData:data toPeers:self.bindPeerItems withMode:MCSessionSendDataReliable error:&error];
+        if (!success) {
+            NSLog(@"error %@", error);
+        }
+        else {
+            
+            
+            [self.chatItems addObject:[NSString stringWithFormat:@"(我:)%@", _inputField.stringValue]];
+            _inputField.stringValue = @"";
+        }
     }
     else {
         
         [self.chatItems addObject:[NSString stringWithFormat:@"(我:)%@", _inputField.stringValue]];
-        
-        [self.chatTableView reloadData];
+        _inputField.stringValue = @"";
     }
+    
+    [self.chatTableView reloadData];
 }
 
 #pragma mark - nearby
@@ -94,11 +113,11 @@
     if (index == NSNotFound) {
         [self.peerItems addObject:peerID];
         [self.typeItems addObject:[info objectForKey:@"type"] != nil ? [info objectForKey:@"type"] : @"未知"];
-        [self.statusItems addObject:@"离线"];
+        [self.statusItems addObject:@"连线中"];
     }
     else {
 
-        [self.statusItems replaceObjectAtIndex:index withObject:@"离线"];
+        [self.statusItems replaceObjectAtIndex:index withObject:@"连线中"];
     }
 
     [self.connecedTableView reloadData];
@@ -120,9 +139,16 @@
     
     [self.bindPeerItems removeObject:peerID];
     
+    
     NSInteger index = [self.peerItems indexOfObject:peerID];
+    
+    if (index != NSNotFound) {
+        [self.peerItems removeObject:peerID];
+        
+        [self.statusItems removeObjectAtIndex:index];
+        [self.typeItems removeObjectAtIndex:index];
+    }
 
-    [self.statusItems replaceObjectAtIndex:index withObject:@"离线"];
 
     NSLog(@"MCNearbyServiceBrowser lostPeer:%@", peerID);
 
@@ -134,14 +160,14 @@
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL, MCSession * _Nullable))invitationHandler
 {
     NSLog(@"didReceiveInvitationFromPeer %@", peerID.displayName);
-    
-    invitationHandler(true, self.session);
-    
+
     NSInteger index = [self.peerItems indexOfObject:peerID];
     if (index != NSNotFound) {
-        [self.statusItems replaceObjectAtIndex:index withObject:@"在线"];
+        [self.statusItems replaceObjectAtIndex:index withObject:@"连接中"];
     }
     [self.connecedTableView reloadData];
+    
+    invitationHandler(true, self.session);
 }
 
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didNotStartAdvertisingPeer:(NSError *)error
@@ -154,20 +180,19 @@
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state
 {
     [self.bindPeerItems removeObject:peerID];
-    [self.bindPeerItems addObject:peerID];
     
     NSInteger index = [self.peerItems indexOfObject:peerID];
     if (index != NSNotFound) {
         if (state == MCSessionStateConnected) {
             [self.statusItems replaceObjectAtIndex:index withObject:@"在线"];
+            [self.bindPeerItems addObject:peerID];
         }
         else if (state == MCSessionStateConnecting) {
             [self.statusItems replaceObjectAtIndex:index withObject:@"连线中"];
         }
-        else {
-            [self.statusItems replaceObjectAtIndex:index withObject:@"离线"];
-        }
     }
+    
+    [self updateChatNum];
     
     [self.connecedTableView reloadData];
 }
