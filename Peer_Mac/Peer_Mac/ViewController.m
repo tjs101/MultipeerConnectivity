@@ -10,8 +10,6 @@
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import <MBProgressHUD-OSX/MBProgressHUD.h>
 
-static NSString *NAME_TAG = @"__________";
-
 @interface ViewController ()<MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate, NSTableViewDataSource ,NSTableViewDelegate>
 
 @property (nonatomic, strong) MCSession *session;
@@ -20,6 +18,12 @@ static NSString *NAME_TAG = @"__________";
 
 @property (nonatomic, strong) NSMutableArray *peerItems;
 @property (nonatomic, strong) NSMutableArray *loserPeerItems;
+@property (nonatomic, strong) NSMutableArray *bindPeerItems;
+
+@property (nonatomic, strong) NSMutableArray *typeItems;
+@property (nonatomic, strong) NSMutableArray *statusItems;
+
+@property (nonatomic, strong) NSMutableArray *chatItems;
 @end
 
 @implementation ViewController
@@ -31,20 +35,50 @@ static NSString *NAME_TAG = @"__________";
     
     self.peerItems = [NSMutableArray array];
     self.loserPeerItems = [NSMutableArray array];
+    self.bindPeerItems = [NSMutableArray array];
+    
+    self.typeItems = [NSMutableArray array];
+    self.statusItems = [NSMutableArray array];
+    
+    self.chatItems = [NSMutableArray array];
 
     [self observerNearBy];
 }
 
+#pragma mark - IBAction
+
+- (IBAction)onSendClick:(id)sender
+{
+    
+    NSData *data = [_inputField.stringValue dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSError *error = nil;
+    BOOL success = [self.session sendData:data toPeers:self.bindPeerItems withMode:MCSessionSendDataReliable error:&error];
+    if (!success) {
+        NSLog(@"error %@", error);
+        [self.serviceBrowser invitePeer:[self.bindPeerItems firstObject] toSession:self.session withContext:nil timeout:30];
+    }
+    else {
+        
+        
+        [self.chatItems addObject:[NSString stringWithFormat:@"(我:)%@", _inputField.stringValue]];
+        
+        [self.chatTableView reloadData];
+    }
+}
+
+#pragma mark - nearby
+
 - (void)observerNearBy
 {
-    NSString *name = [NSString stringWithFormat:@"%@%@%@", @"dd", NAME_TAG, @"OSX"];
+    NSHost *host = [NSHost currentHost];
     
-    MCPeerID *sessionPeerId = [[MCPeerID alloc] initWithDisplayName:name];
+    MCPeerID *sessionPeerId = [[MCPeerID alloc] initWithDisplayName:[NSString stringWithFormat:@"%@%@", host.localizedName, host.name]];
     
     self.session = [[MCSession alloc] initWithPeer:sessionPeerId securityIdentity:nil encryptionPreference:MCEncryptionRequired];
     self.session.delegate = self;
     
-    self.serviceAdvertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:sessionPeerId discoveryInfo:nil serviceType:@"abc-txtchat"];
+    self.serviceAdvertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:sessionPeerId discoveryInfo:@{@"type" : @"OSX"} serviceType:@"abc-txtchat"];
     self.serviceAdvertiser.delegate = self;
     [self.serviceAdvertiser startAdvertisingPeer];
     
@@ -52,24 +86,6 @@ static NSString *NAME_TAG = @"__________";
     self.serviceBrowser.delegate = self;
     [self.serviceBrowser startBrowsingForPeers];
     
-}
-
-#pragma mark - 解析名字
-
-- (NSString *)nameForPeer:(MCPeerID *)peer
-{
-    if (!peer) {
-        return @"";
-    }
-    return [[peer.displayName componentsSeparatedByString:NAME_TAG] firstObject];
-}
-
-- (NSString *)osForPeer:(MCPeerID *)peer
-{
-    if (!peer) {
-        return @"";
-    }
-    return [[peer.displayName componentsSeparatedByString:NAME_TAG] lastObject];
 }
 
 #pragma mark - update device num
@@ -86,12 +102,17 @@ static NSString *NAME_TAG = @"__________";
     NSLog(@"info %@ peerId %@", info, peerID.displayName);
 
     [self.peerItems addObject:peerID];
+    [self.typeItems addObject:[info objectForKey:@"type"]];
+    [self.statusItems addObject:@"未连接"];
+    
     [self.loserPeerItems removeObject:peerID];
     
     [self updateDeviceNum];
 
     [self.connecedTableView reloadData];
     [self.loserConnecedTableView reloadData];
+    
+    [self.serviceBrowser invitePeer:peerID toSession:self.session withContext:nil timeout:30];
 }
 
 - (void)browser:(MCNearbyServiceBrowser *)browser didNotStartBrowsingForPeers:(NSError *)error
@@ -106,7 +127,13 @@ static NSString *NAME_TAG = @"__________";
     progressHud.labelText = [NSString stringWithFormat:@"%@已失去连接", peerID.displayName];
     [progressHud hide:YES afterDelay:2];
     
+    [self.bindPeerItems removeObject:peerID];
+    
+    NSInteger index = [self.peerItems indexOfObject:peerID];
     [self.peerItems removeObject:peerID];
+    [self.typeItems removeObjectAtIndex:index];
+    [self.statusItems removeObjectAtIndex:index];
+    
     [self.loserPeerItems addObject:peerID];
     NSLog(@"MCNearbyServiceBrowser lostPeer:%@", peerID);
     
@@ -121,20 +148,43 @@ static NSString *NAME_TAG = @"__________";
 - (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void (^)(BOOL, MCSession * _Nullable))invitationHandler
 {
     NSLog(@"didReceiveInvitationFromPeer %@", peerID.displayName);
+
+    if (YES) {
+        invitationHandler(true, self.session);
+        
+        NSInteger index = [self.peerItems indexOfObject:peerID];
+        [self.statusItems replaceObjectAtIndex:index withObject:@"已连接"];
+        
+        [self.connecedTableView reloadData];
+        return;
+    }
+    
     NSString *message = [NSString stringWithFormat:@"%@请求连接您的设备？是否接受？", peerID.displayName];
     
     NSAlert *alert = [[NSAlert alloc] init];
     alert.messageText = message;
-    [alert addButtonWithTitle:@"接受"];
+    
     [alert addButtonWithTitle:@"拒绝"];
+    [alert addButtonWithTitle:@"接受"];
+    
     [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
         
-        if (returnCode == NSModalResponseOK) {
-            invitationHandler(true, self.session);
+        if (returnCode == NSAlertFirstButtonReturn) {
+            invitationHandler(false, self.session);
+            
+            NSInteger index = [self.peerItems indexOfObject:peerID];
+            [self.statusItems replaceObjectAtIndex:index withObject:@"已拒绝"];
+            
         }
-        else {
+        else if (returnCode == NSAlertSecondButtonReturn) {
+
             invitationHandler(true, self.session);
+            
+            NSInteger index = [self.peerItems indexOfObject:peerID];
+            [self.statusItems replaceObjectAtIndex:index withObject:@"已连接"];
         }
+        
+        [self.connecedTableView reloadData];
     }];
 
 }
@@ -148,20 +198,40 @@ static NSString *NAME_TAG = @"__________";
 
 - (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state
 {
+    if (YES) {
+        [self.bindPeerItems removeObject:peerID];
+        [self.bindPeerItems addObject:peerID];
+        
+        NSInteger index = [self.peerItems indexOfObject:peerID];
+        [self.statusItems replaceObjectAtIndex:index withObject:@"已连接"];
+        
+        return;
+    }
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         NSString *message = [NSString stringWithFormat:@"%@连接了您的设备", peerID.displayName];
         if (state == MCSessionStateConnected) {
+            
+            [self.bindPeerItems removeObject:peerID];
+            [self.bindPeerItems addObject:peerID];
+            
             NSAlert *alert = [[NSAlert alloc] init];
             alert.messageText = message;
             [alert addButtonWithTitle:@"知道了"];
             [alert beginSheetModalForWindow:self.view.window completionHandler:NULL];
         }
+        
     });
 
 }
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
 {
+    NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
+    [self.chatItems addObject:[NSString stringWithFormat:@"(%@:)%@", peerID.displayName, message]];
+    
+    [self.chatTableView reloadData];
     
 }
 
@@ -190,37 +260,62 @@ static NSString *NAME_TAG = @"__________";
     else if (tableView == _loserConnecedTableView) {
         return [self.loserPeerItems count];
     }
+    else if (tableView == _chatTableView) {
+        return [self.chatItems count];
+    }
     return 0;
 }
 
-- (nullable id)tableView:(NSTableView *)tableView objectValueForTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row
+- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    MCPeerID *peerId = nil;
-    
-    NSString *identifier =  tableView.identifier;
-    
-    if (tableView == _connecedTableView) {
 
-        peerId = [self.peerItems objectAtIndex:row];
-
-    }
-    else if (tableView == _loserConnecedTableView) {
-
-        peerId = [self.loserPeerItems objectAtIndex:row];
-
-    }
-    
-    if ([identifier isEqualToString:@"left"]) {
+    if (tableView == _chatTableView) {// 聊天
         
-        return [self nameForPeer:peerId];
-    }
-    else if ([identifier isEqualToString:@"right"]) {
+        return [self.chatItems objectAtIndex:row];
         
-        return [self osForPeer:peerId];
+    }
+    else {
+        MCPeerID *peerId = nil;
+        
+        NSString *identifier = tableColumn.identifier;
+        
+        if (tableView == _connecedTableView) {
+            
+            peerId = [self.peerItems objectAtIndex:row];
+            
+        }
+        else if (tableView == _loserConnecedTableView) {
+            
+            peerId = [self.loserPeerItems objectAtIndex:row];
+            
+        }
+        
+        if ([identifier isEqualToString:@"name"]) {
+            
+            return peerId.displayName;
+        }
+        else if ([identifier isEqualToString:@"type"]) {
+            
+            return [self.typeItems objectAtIndex:row];
+        }
+        else if ([identifier isEqualToString:@"status"]) {
+            
+            return [self.statusItems objectAtIndex:row];
+        }
     }
     
     return @"";
 }
+
+//- (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row
+//{
+//    if (tableView == _connecedTableView) {
+//        
+//        MCPeerID *peerId = [self.peerItems objectAtIndex:row];
+//        [self.serviceBrowser invitePeer:peerId toSession:self.session withContext:nil timeout:30];
+//    }
+//    return YES;
+//}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];

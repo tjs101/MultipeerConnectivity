@@ -1,12 +1,15 @@
 PODS:
   - HAlertController (1.0.0)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - HAlertController
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   HAlertController: c612130388b41d859eab051e7cb04c06e638c40f
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 06585fe55dd7723204331fe52d629eddd9a5cc28
+PODFILE CHECKSUM: 7068cb1f53cdb91198d205f9482831fcc8849a6b
 
 COCOAPODS: 1.2.0.beta.1

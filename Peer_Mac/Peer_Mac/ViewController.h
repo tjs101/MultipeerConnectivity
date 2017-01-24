@@ -14,5 +14,9 @@
 @property (nonatomic, assign) IBOutlet NSTableView *loserConnecedTableView;/**<失去连接的tableview>*/
 @property (nonatomic, strong) IBOutlet NSTextField *deviceNumLabel;/**<设备数>*/
 
+@property (nonatomic, strong) IBOutlet NSTableView *chatTableView;/**<解释>*/
+@property (nonatomic, assign) IBOutlet NSTextField *inputField;/**<解释>*/
+@property (nonatomic, strong) IBOutlet NSButton *sendBtn;/**<解释>*/
+
 @end
 

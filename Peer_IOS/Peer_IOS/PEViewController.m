@@ -9,8 +9,7 @@
 #import "PEViewController.h"
 #import <MultipeerConnectivity/MultipeerConnectivity.h>
 #import <HAlertController/HAlertController.h>
-
-static NSString *NAME_TAG = @"__________";
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface PEViewController () <MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate>
 
@@ -35,14 +34,12 @@ static NSString *NAME_TAG = @"__________";
 
 - (void)observerNearBy
 {
-    NSString *name = [NSString stringWithFormat:@"%@%@%@", [UIDevice currentDevice].name, NAME_TAG, @"IOS"];
-    
-    MCPeerID *sessionPeerId = [[MCPeerID alloc] initWithDisplayName:name];
+    MCPeerID *sessionPeerId = [[MCPeerID alloc] initWithDisplayName:[UIDevice currentDevice].name];
     
     self.session = [[MCSession alloc] initWithPeer:sessionPeerId securityIdentity:nil encryptionPreference:MCEncryptionRequired];
     self.session.delegate = self;
     
-    self.serviceAdvertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:sessionPeerId discoveryInfo:nil serviceType:@"abc-txtchat"];
+    self.serviceAdvertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:sessionPeerId discoveryInfo:@{@"type" : @"IOS"} serviceType:@"abc-txtchat"];
     self.serviceAdvertiser.delegate = self;
     [self.serviceAdvertiser startAdvertisingPeer];
     
@@ -50,18 +47,6 @@ static NSString *NAME_TAG = @"__________";
     self.serviceBrowser.delegate = self;
     [self.serviceBrowser startBrowsingForPeers];
     
-}
-
-#pragma mark - 解析名字
-
-- (NSString *)nameForPeer:(MCPeerID *)peer
-{
-    return [[peer.displayName componentsSeparatedByString:NAME_TAG] firstObject];
-}
-
-- (NSString *)osForPeer:(MCPeerID *)peer
-{
-    return [[peer.displayName componentsSeparatedByString:NAME_TAG] lastObject];
 }
 
 #pragma mark - MCNearbyServiceBrowserDelegate
@@ -117,7 +102,7 @@ static NSString *NAME_TAG = @"__________";
 
 - (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
 {
-    
+
 }
 
 - (void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID
@@ -148,7 +133,7 @@ static NSString *NAME_TAG = @"__________";
     }
     
     MCPeerID *peer = [self.peerItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = [self nameForPeer:peer];
+    cell.textLabel.text = peer.displayName;
     
     return cell;
 }

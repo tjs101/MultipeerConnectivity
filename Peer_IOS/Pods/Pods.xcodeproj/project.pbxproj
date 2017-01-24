@@ -7,24 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03CE6AD293ADDF4D59A83B8A17EA8054 /* UIActionSheet+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = C85FB1B4BA2222FAAD0EC69DFD3FCDAF /* UIActionSheet+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0B8E8B76FA3975BCA63BA8233D232708 /* HAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = C66E3585DD928AB39DECA6B73F87BE93 /* HAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2D966580833613DB0E251CCADED06851 /* HAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD6585086C23EF1F6A4F6E349BF67B0 /* HAlertAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2FA267F74C38830C14360BC24017508A /* Pods-Peer_IOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4417E2F6C74841D8A07EE7C1C7ACDC4 /* Pods-Peer_IOS-dummy.m */; };
-		532FFA77D14BF45968944F299207CE1A /* UIAlertController+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF944B8D01EA9F0D7ED11A9F49CE58 /* UIAlertController+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		63B32C8BCC63607FC3B7D3577F6E24E6 /* HAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 014557F9BF13EC6E19337A13038BD6FD /* HAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64918D8E39F8CF49E0F467C7733ED8BD /* UIAlertView+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = BBDDB681FC8CCCE59BC899E959A01C3D /* UIAlertView+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		682D491DC5A374539AB13769FE50A35F /* UIAlertView+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = BA292A41E64C8219D8A3924A2ACB2F77 /* UIAlertView+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9926A023781D640EC3914542278A5066 /* UIAlertController+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F06238B1EC624ABC2B1154189F89244 /* UIAlertController+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		992913734D330D3BF55E0EF1256D74F8 /* UIActionSheet+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = C0BA5BB0E7D77FABF24C9538BECFBADC /* UIActionSheet+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E5655780DF60DF4D8248665F7961E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		AB786F9D9E0D79F1B213F58F77D04536 /* HAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461A9960F55A2EDA9B4D01F4E976BEDB /* HAlertController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CB4C1B9422744C2F5984AA0A3B22755B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FC6381389F09967F7CB02D45B718169B /* HAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96137A077F20D4FABA039DA763BF99FB /* HAlertController-dummy.m */; };
+		03CE6AD293ADDF4D59A83B8A17EA8054 /* UIActionSheet+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = 824520067BDCF842EA80E758316912EE /* UIActionSheet+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0B8E8B76FA3975BCA63BA8233D232708 /* HAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0D46FAD120E3A6B2362A91181A2EFFA /* HAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1518F783C7A3A36DB9819AA16F341721 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8B2AFD716907566CCBAA37AD81E0BD /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D41A4D82EE31314EF6CC0E2D08131D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		2D966580833613DB0E251CCADED06851 /* HAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A2EB4E5B6D42E3764062AD5D1D7FE2 /* HAlertAction.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		532FFA77D14BF45968944F299207CE1A /* UIAlertController+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = 7666A659379736973944A77D1E99D8D1 /* UIAlertController+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63B32C8BCC63607FC3B7D3577F6E24E6 /* HAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B2FA5F09185FC1C79CB43B5E87B999 /* HAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64918D8E39F8CF49E0F467C7733ED8BD /* UIAlertView+HWW.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F090C7211C8B1AB388B3CC84829626 /* UIAlertView+HWW.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6499AD27AEE047D6030BAB36E5C3FDB1 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDED9716B2FEDF9F4A60754D32F9538 /* SVIndefiniteAnimatedView.m */; };
+		6670D05935345A14A308A1B3F92B27CC /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C76DC693CE6F126FF5997A25134FCB /* SVProgressHUD-dummy.m */; };
+		67036860783E4BCB6491F606A84323E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
+		682D491DC5A374539AB13769FE50A35F /* UIAlertView+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = 44B241471C62D1E6B8A80D6374567626 /* UIAlertView+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FF3F5B0AC2F51BFB6BD6AEBDC1D1983 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 500266B9326C219C167F5C2B1408B6EC /* SVProgressHUD.m */; };
+		8E12ABD829EF17089F0086FA7B65A399 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BD7D0934E20163A97268B1AA4A35C40 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9926A023781D640EC3914542278A5066 /* UIAlertController+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = 80B0033A3559E634D8E57CB735B24423 /* UIAlertController+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		992913734D330D3BF55E0EF1256D74F8 /* UIActionSheet+HWW.h in Headers */ = {isa = PBXBuildFile; fileRef = 721BEF08BC87FB246498A1072501D162 /* UIActionSheet+HWW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B01E79FBBF31A8380BACF1B97C115C4 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6961CC45101A8C7701F671D5DBEA44 /* SVRadialGradientLayer.m */; };
+		9E5655780DF60DF4D8248665F7961E60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		AB786F9D9E0D79F1B213F58F77D04536 /* HAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F6DDE85B284D7C309823AB55E54AD1 /* HAlertController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C57A0F3674F7A10C7587BF1F6352847C /* Pods-Peer_IOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4417E2F6C74841D8A07EE7C1C7ACDC4 /* Pods-Peer_IOS-dummy.m */; };
+		D386985D4827A231853BACD7871EBF5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		DBFE9EBC1E9124D080D2B5A9667E3C5B /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F4535A2403F378AAEBDB8841D6EF6A77 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4B39944BC4EA51B1E0506AA22C7FE1D /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3680F5831DBD25127FF3F19C4406ECAE /* SVProgressAnimatedView.m */; };
+		FBBBC2DA0A864F99430D61B129565103 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B85FC747FE9B3D3C73423112A6AD7F /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC6381389F09967F7CB02D45B718169B /* HAlertController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0C860FDBEA2238A4144CA93726B045 /* HAlertController-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E692C0ACFF466EA139D3A6D6C099818A /* PBXContainerItemProxy */ = {
+		34ED9965CC87B8492809614228823769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C846C1A5FE8E541A9FD3D37F92E0DE6D;
+			remoteInfo = SVProgressHUD;
+		};
+		9A987E1B7257E9C2CC48E30440DDEE1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -34,38 +52,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014557F9BF13EC6E19337A13038BD6FD /* HAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HAlertAction.h; path = HAlertController/HAlertAction.h; sourceTree = "<group>"; };
-		0BD6585086C23EF1F6A4F6E349BF67B0 /* HAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HAlertAction.m; path = HAlertController/HAlertAction.m; sourceTree = "<group>"; };
+		04C76DC693CE6F126FF5997A25134FCB /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		06F6DDE85B284D7C309823AB55E54AD1 /* HAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HAlertController.m; path = HAlertController/HAlertController.m; sourceTree = "<group>"; };
 		12990326F06E075BB3F1E1D18ED7C8F6 /* Pods-Peer_IOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Peer_IOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		16A5383C4E71050E124701808219C7E3 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSVProgressHUD.a; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3680F5831DBD25127FF3F19C4406ECAE /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		37A2EB4E5B6D42E3764062AD5D1D7FE2 /* HAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HAlertAction.m; path = HAlertController/HAlertAction.m; sourceTree = "<group>"; };
+		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4430743BE4ED0643DB6C94FAEAF065A4 /* Pods-Peer_IOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Peer_IOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		461A9960F55A2EDA9B4D01F4E976BEDB /* HAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HAlertController.m; path = HAlertController/HAlertController.m; sourceTree = "<group>"; };
-		4FBF944B8D01EA9F0D7ED11A9F49CE58 /* UIAlertController+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+HWW.m"; path = "HAlertController/UIAlertController+HWW.m"; sourceTree = "<group>"; };
+		44B241471C62D1E6B8A80D6374567626 /* UIAlertView+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+HWW.h"; path = "HAlertController/UIAlertView+HWW.h"; sourceTree = "<group>"; };
+		48589F299C81E38CAA336DD53771A930 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		500266B9326C219C167F5C2B1408B6EC /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		52B85FC747FE9B3D3C73423112A6AD7F /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		5B2EFD1A50C0FC37CD830687E6473384 /* HAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HAlertController.xcconfig; sourceTree = "<group>"; };
 		66D8A50DC4C8A67185B2BEF257673C72 /* Pods-Peer_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peer_IOS.release.xcconfig"; sourceTree = "<group>"; };
-		7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HAlertController.xcconfig; sourceTree = "<group>"; };
+		721BEF08BC87FB246498A1072501D162 /* UIActionSheet+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+HWW.h"; path = "HAlertController/UIActionSheet+HWW.h"; sourceTree = "<group>"; };
+		7666A659379736973944A77D1E99D8D1 /* UIAlertController+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+HWW.m"; path = "HAlertController/UIAlertController+HWW.m"; sourceTree = "<group>"; };
+		7ABCE0E044DE34E8AEDCC9A7574687A5 /* libPods-Peer_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Peer_IOS.a"; path = "libPods-Peer_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B0033A3559E634D8E57CB735B24423 /* UIAlertController+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+HWW.h"; path = "HAlertController/UIAlertController+HWW.h"; sourceTree = "<group>"; };
+		824520067BDCF842EA80E758316912EE /* UIActionSheet+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+HWW.m"; path = "HAlertController/UIActionSheet+HWW.m"; sourceTree = "<group>"; };
+		876A218B7A76E740938E911CF2AD97C6 /* HAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HAlertController-prefix.pch"; sourceTree = "<group>"; };
 		88A1FDE5D2180ACCF6530B02E39AE973 /* Pods-Peer_IOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Peer_IOS-frameworks.sh"; sourceTree = "<group>"; };
-		88B2528B8D2FD6FF73A34ABC1F082604 /* HAlertController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HAlertController-prefix.pch"; sourceTree = "<group>"; };
 		8A3B618BF88CD6FCCD129E5A06080E47 /* Pods-Peer_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Peer_IOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8F06238B1EC624ABC2B1154189F89244 /* UIAlertController+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+HWW.h"; path = "HAlertController/UIAlertController+HWW.h"; sourceTree = "<group>"; };
+		8AE962A897FF2278B6D0D9F82E5558E0 /* libHAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHAlertController.a; path = libHAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8B2AFD716907566CCBAA37AD81E0BD /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96137A077F20D4FABA039DA763BF99FB /* HAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HAlertController-dummy.m"; sourceTree = "<group>"; };
+		9BD7D0934E20163A97268B1AA4A35C40 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		A4417E2F6C74841D8A07EE7C1C7ACDC4 /* Pods-Peer_IOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Peer_IOS-dummy.m"; sourceTree = "<group>"; };
-		BA292A41E64C8219D8A3924A2ACB2F77 /* UIAlertView+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+HWW.h"; path = "HAlertController/UIAlertView+HWW.h"; sourceTree = "<group>"; };
-		BBDDB681FC8CCCE59BC899E959A01C3D /* UIAlertView+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+HWW.m"; path = "HAlertController/UIAlertView+HWW.m"; sourceTree = "<group>"; };
-		BF30A169685DB51687394C498C73461B /* libPods-Peer_IOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Peer_IOS.a"; path = "libPods-Peer_IOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0BA5BB0E7D77FABF24C9538BECFBADC /* UIActionSheet+HWW.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+HWW.h"; path = "HAlertController/UIActionSheet+HWW.h"; sourceTree = "<group>"; };
-		C66E3585DD928AB39DECA6B73F87BE93 /* HAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HAlertController.h; path = HAlertController/HAlertController.h; sourceTree = "<group>"; };
-		C85FB1B4BA2222FAAD0EC69DFD3FCDAF /* UIActionSheet+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+HWW.m"; path = "HAlertController/UIActionSheet+HWW.m"; sourceTree = "<group>"; };
-		CBA9D6039D0B4CAE35DAB85BC34BF7F6 /* libHAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHAlertController.a; path = libHAlertController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AB0C860FDBEA2238A4144CA93726B045 /* HAlertController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HAlertController-dummy.m"; sourceTree = "<group>"; };
+		ACDED9716B2FEDF9F4A60754D32F9538 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		AF6961CC45101A8C7701F671D5DBEA44 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		B4B2FA5F09185FC1C79CB43B5E87B999 /* HAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HAlertAction.h; path = HAlertController/HAlertAction.h; sourceTree = "<group>"; };
+		BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C0D46FAD120E3A6B2362A91181A2EFFA /* HAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HAlertController.h; path = HAlertController/HAlertController.h; sourceTree = "<group>"; };
+		C2F0FCCEB2C5E68119F767A14407755C /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		D3F090C7211C8B1AB388B3CC84829626 /* UIAlertView+HWW.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+HWW.m"; path = "HAlertController/UIAlertView+HWW.m"; sourceTree = "<group>"; };
 		E4E7B3DD1FEBE2125BFAD672CDE0AFAA /* Pods-Peer_IOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Peer_IOS-resources.sh"; sourceTree = "<group>"; };
+		EB9DA04F2DF71EF27D8CDEC8D08DD4A4 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		F4535A2403F378AAEBDB8841D6EF6A77 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1E2FC407748BD01E7EE0EF2691AF33E8 /* Frameworks */ = {
+		1F3CE5FC1F8AC26C62297AE02C25793C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4C1B9422744C2F5984AA0A3B22755B /* Foundation.framework in Frameworks */,
+				D386985D4827A231853BACD7871EBF5C /* Foundation.framework in Frameworks */,
+				67036860783E4BCB6491F606A84323E7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76390CBFE66D0B05440E9153FD7D97AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D41A4D82EE31314EF6CC0E2D08131D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,40 +121,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45C41C2A2C76CE49A0D1F6965F12543E /* HAlertController */ = {
+		001A33DC5767A910A785209B35257A64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				014557F9BF13EC6E19337A13038BD6FD /* HAlertAction.h */,
-				0BD6585086C23EF1F6A4F6E349BF67B0 /* HAlertAction.m */,
-				C66E3585DD928AB39DECA6B73F87BE93 /* HAlertController.h */,
-				461A9960F55A2EDA9B4D01F4E976BEDB /* HAlertController.m */,
-				C0BA5BB0E7D77FABF24C9538BECFBADC /* UIActionSheet+HWW.h */,
-				C85FB1B4BA2222FAAD0EC69DFD3FCDAF /* UIActionSheet+HWW.m */,
-				8F06238B1EC624ABC2B1154189F89244 /* UIAlertController+HWW.h */,
-				4FBF944B8D01EA9F0D7ED11A9F49CE58 /* UIAlertController+HWW.m */,
-				BA292A41E64C8219D8A3924A2ACB2F77 /* UIAlertView+HWW.h */,
-				BBDDB681FC8CCCE59BC899E959A01C3D /* UIAlertView+HWW.m */,
-				B37BE825700E0DDA13BF76583DE05FDC /* Support Files */,
+				8AE962A897FF2278B6D0D9F82E5558E0 /* libHAlertController.a */,
+				7ABCE0E044DE34E8AEDCC9A7574687A5 /* libPods-Peer_IOS.a */,
+				16A5383C4E71050E124701808219C7E3 /* libSVProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15CF64D9E8E5728486B82BACA222383B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B2EFD1A50C0FC37CD830687E6473384 /* HAlertController.xcconfig */,
+				AB0C860FDBEA2238A4144CA93726B045 /* HAlertController-dummy.m */,
+				876A218B7A76E740938E911CF2AD97C6 /* HAlertController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HAlertController";
+			sourceTree = "<group>";
+		};
+		3A746D8A129B8A3EE6CBD3308891AB3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C9D30F689380988C84DC3E8224D6A5B /* HAlertController */,
+				407264238E041812BC5C5C7BADBAB97B /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		407264238E041812BC5C5C7BADBAB97B /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B2AFD716907566CCBAA37AD81E0BD /* SVIndefiniteAnimatedView.h */,
+				ACDED9716B2FEDF9F4A60754D32F9538 /* SVIndefiniteAnimatedView.m */,
+				52B85FC747FE9B3D3C73423112A6AD7F /* SVProgressAnimatedView.h */,
+				3680F5831DBD25127FF3F19C4406ECAE /* SVProgressAnimatedView.m */,
+				F4535A2403F378AAEBDB8841D6EF6A77 /* SVProgressHUD.h */,
+				500266B9326C219C167F5C2B1408B6EC /* SVProgressHUD.m */,
+				9BD7D0934E20163A97268B1AA4A35C40 /* SVRadialGradientLayer.h */,
+				AF6961CC45101A8C7701F671D5DBEA44 /* SVRadialGradientLayer.m */,
+				75099532274BDF10A33EA6B3CC5A5737 /* Resources */,
+				F509D7C8EE67D463961A40100F292FFF /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB6F27FF3606F9360547F8F1977A63 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C9D30F689380988C84DC3E8224D6A5B /* HAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				B4B2FA5F09185FC1C79CB43B5E87B999 /* HAlertAction.h */,
+				37A2EB4E5B6D42E3764062AD5D1D7FE2 /* HAlertAction.m */,
+				C0D46FAD120E3A6B2362A91181A2EFFA /* HAlertController.h */,
+				06F6DDE85B284D7C309823AB55E54AD1 /* HAlertController.m */,
+				721BEF08BC87FB246498A1072501D162 /* UIActionSheet+HWW.h */,
+				824520067BDCF842EA80E758316912EE /* UIActionSheet+HWW.m */,
+				80B0033A3559E634D8E57CB735B24423 /* UIAlertController+HWW.h */,
+				7666A659379736973944A77D1E99D8D1 /* UIAlertController+HWW.m */,
+				44B241471C62D1E6B8A80D6374567626 /* UIAlertView+HWW.h */,
+				D3F090C7211C8B1AB388B3CC84829626 /* UIAlertView+HWW.m */,
+				15CF64D9E8E5728486B82BACA222383B /* Support Files */,
 			);
 			name = HAlertController;
 			path = HAlertController;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		75099532274BDF10A33EA6B3CC5A5737 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				48589F299C81E38CAA336DD53771A930 /* SVProgressHUD.bundle */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A8AC5031A31B6F38F71687FF2E3CA14C /* Pods */,
-				C70627831DB5144312D9100FEDB3905A /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3A746D8A129B8A3EE6CBD3308891AB3C /* Pods */,
+				001A33DC5767A910A785209B35257A64 /* Products */,
 				D17CEE183455C934197CDCB9B292478E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -133,40 +230,13 @@
 			path = "Target Support Files/Pods-Peer_IOS";
 			sourceTree = "<group>";
 		};
-		A8AC5031A31B6F38F71687FF2E3CA14C /* Pods */ = {
+		C7AB6F27FF3606F9360547F8F1977A63 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				45C41C2A2C76CE49A0D1F6965F12543E /* HAlertController */,
+				3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */,
+				BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B37BE825700E0DDA13BF76583DE05FDC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */,
-				96137A077F20D4FABA039DA763BF99FB /* HAlertController-dummy.m */,
-				88B2528B8D2FD6FF73A34ABC1F082604 /* HAlertController-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HAlertController";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C70627831DB5144312D9100FEDB3905A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CBA9D6039D0B4CAE35DAB85BC34BF7F6 /* libHAlertController.a */,
-				BF30A169685DB51687394C498C73461B /* libPods-Peer_IOS.a */,
-			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		D17CEE183455C934197CDCB9B292478E /* Targets Support Files */ = {
@@ -175,6 +245,17 @@
 				90642E2F446D54A07BAB29F3A2EDB241 /* Pods-Peer_IOS */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F509D7C8EE67D463961A40100F292FFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2F0FCCEB2C5E68119F767A14407755C /* SVProgressHUD.xcconfig */,
+				04C76DC693CE6F126FF5997A25134FCB /* SVProgressHUD-dummy.m */,
+				EB9DA04F2DF71EF27D8CDEC8D08DD4A4 /* SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,24 +273,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65E1BAEF8344AA22E7DA8797DB406972 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1518F783C7A3A36DB9819AA16F341721 /* SVIndefiniteAnimatedView.h in Headers */,
+				FBBBC2DA0A864F99430D61B129565103 /* SVProgressAnimatedView.h in Headers */,
+				DBFE9EBC1E9124D080D2B5A9667E3C5B /* SVProgressHUD.h in Headers */,
+				8E12ABD829EF17089F0086FA7B65A399 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		033338EB15AE808A1B7110377EA3802F /* Pods-Peer_IOS */ = {
+		0AA8E93F08E6B0A54DAAF8D76935B37E /* Pods-Peer_IOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BB1B5AD37DBC171A98B3FE9F23CAD9D /* Build configuration list for PBXNativeTarget "Pods-Peer_IOS" */;
+			buildConfigurationList = 1C491B5199764A2BC46DC657CC9BF53B /* Build configuration list for PBXNativeTarget "Pods-Peer_IOS" */;
 			buildPhases = (
-				A4ED3EE7B098C0D015021164D194C972 /* Sources */,
-				1E2FC407748BD01E7EE0EF2691AF33E8 /* Frameworks */,
+				494EEA8CC965E3DEFC8710F2ABFD8A0F /* Sources */,
+				76390CBFE66D0B05440E9153FD7D97AE /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CEE85FD696DBA8BB3D999233C6CDBDB6 /* PBXTargetDependency */,
+				972C9E2A53B8CA07592C07BD3C2BE755 /* PBXTargetDependency */,
+				3784F983BCFE81D0F90F1F84722DDDCA /* PBXTargetDependency */,
 			);
 			name = "Pods-Peer_IOS";
 			productName = "Pods-Peer_IOS";
-			productReference = BF30A169685DB51687394C498C73461B /* libPods-Peer_IOS.a */;
+			productReference = 7ABCE0E044DE34E8AEDCC9A7574687A5 /* libPods-Peer_IOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		BC89226424524D953B22704CA568FA9A /* HAlertController */ = {
@@ -226,7 +319,24 @@
 			);
 			name = HAlertController;
 			productName = HAlertController;
-			productReference = CBA9D6039D0B4CAE35DAB85BC34BF7F6 /* libHAlertController.a */;
+			productReference = 8AE962A897FF2278B6D0D9F82E5558E0 /* libHAlertController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C846C1A5FE8E541A9FD3D37F92E0DE6D /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDCEF368C7DB0C184EF0211EC3764B5 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				C50E29B1D060B91B41AF2E93CC3E8895 /* Sources */,
+				1F3CE5FC1F8AC26C62297AE02C25793C /* Frameworks */,
+				65E1BAEF8344AA22E7DA8797DB406972 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 16A5383C4E71050E124701808219C7E3 /* libSVProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -246,22 +356,35 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C70627831DB5144312D9100FEDB3905A /* Products */;
+			productRefGroup = 001A33DC5767A910A785209B35257A64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BC89226424524D953B22704CA568FA9A /* HAlertController */,
-				033338EB15AE808A1B7110377EA3802F /* Pods-Peer_IOS */,
+				0AA8E93F08E6B0A54DAAF8D76935B37E /* Pods-Peer_IOS */,
+				C846C1A5FE8E541A9FD3D37F92E0DE6D /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A4ED3EE7B098C0D015021164D194C972 /* Sources */ = {
+		494EEA8CC965E3DEFC8710F2ABFD8A0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA267F74C38830C14360BC24017508A /* Pods-Peer_IOS-dummy.m in Sources */,
+				C57A0F3674F7A10C7587BF1F6352847C /* Pods-Peer_IOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C50E29B1D060B91B41AF2E93CC3E8895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6499AD27AEE047D6030BAB36E5C3FDB1 /* SVIndefiniteAnimatedView.m in Sources */,
+				E4B39944BC4EA51B1E0506AA22C7FE1D /* SVProgressAnimatedView.m in Sources */,
+				6670D05935345A14A308A1B3F92B27CC /* SVProgressHUD-dummy.m in Sources */,
+				7FF3F5B0AC2F51BFB6BD6AEBDC1D1983 /* SVProgressHUD.m in Sources */,
+				9B01E79FBBF31A8380BACF1B97C115C4 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,11 +404,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CEE85FD696DBA8BB3D999233C6CDBDB6 /* PBXTargetDependency */ = {
+		3784F983BCFE81D0F90F1F84722DDDCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = C846C1A5FE8E541A9FD3D37F92E0DE6D /* SVProgressHUD */;
+			targetProxy = 34ED9965CC87B8492809614228823769 /* PBXContainerItemProxy */;
+		};
+		972C9E2A53B8CA07592C07BD3C2BE755 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HAlertController;
 			target = BC89226424524D953B22704CA568FA9A /* HAlertController */;
-			targetProxy = E692C0ACFF466EA139D3A6D6C099818A /* PBXContainerItemProxy */;
+			targetProxy = 9A987E1B7257E9C2CC48E30440DDEE1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,9 +463,32 @@
 			};
 			name = Debug;
 		};
+		07E7FFF1D9285FACC0A07D4C7494B234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F0FCCEB2C5E68119F767A14407755C /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		08A3BC2E3A3369C4A0266C3FBCCFCC6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */;
+			baseConfigurationReference = 5B2EFD1A50C0FC37CD830687E6473384 /* HAlertController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -397,9 +549,9 @@
 			};
 			name = Release;
 		};
-		8721953D174FFD26AB35AA6C58320033 /* Debug */ = {
+		4B9183A6A5413ED81C2B3DB1F63FFFD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A3B618BF88CD6FCCD129E5A06080E47 /* Pods-Peer_IOS.debug.xcconfig */;
+			baseConfigurationReference = C2F0FCCEB2C5E68119F767A14407755C /* SVProgressHUD.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -407,20 +559,43 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		A68614715F3D8E0696B7CF398D6C8224 /* Release */ = {
+		DAEB0E7217D911F64361DA031C4EE2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B2EFD1A50C0FC37CD830687E6473384 /* HAlertController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HAlertController/HAlertController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E278E1051C5DAF0A59F7CF849898B188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 66D8A50DC4C8A67185B2BEF257673C72 /* Pods-Peer_IOS.release.xcconfig */;
 			buildSettings = {
@@ -443,9 +618,9 @@
 			};
 			name = Release;
 		};
-		DAEB0E7217D911F64361DA031C4EE2C3 /* Debug */ = {
+		FBB2F8B4BA1234645D179F9EBDF85011 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B4CAE2FBEFA09833B1B7F1CCB3FA2AA /* HAlertController.xcconfig */;
+			baseConfigurationReference = 8A3B618BF88CD6FCCD129E5A06080E47 /* Pods-Peer_IOS.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -453,14 +628,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HAlertController/HAlertController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -469,11 +644,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BB1B5AD37DBC171A98B3FE9F23CAD9D /* Build configuration list for PBXNativeTarget "Pods-Peer_IOS" */ = {
+		1C491B5199764A2BC46DC657CC9BF53B /* Build configuration list for PBXNativeTarget "Pods-Peer_IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8721953D174FFD26AB35AA6C58320033 /* Debug */,
-				A68614715F3D8E0696B7CF398D6C8224 /* Release */,
+				FBB2F8B4BA1234645D179F9EBDF85011 /* Debug */,
+				E278E1051C5DAF0A59F7CF849898B188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -492,6 +667,15 @@
 			buildConfigurations = (
 				DAEB0E7217D911F64361DA031C4EE2C3 /* Debug */,
 				08A3BC2E3A3369C4A0266C3FBCCFCC6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDCEF368C7DB0C184EF0211EC3764B5 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9183A6A5413ED81C2B3DB1F63FFFD5 /* Debug */,
+				07E7FFF1D9285FACC0A07D4C7494B234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

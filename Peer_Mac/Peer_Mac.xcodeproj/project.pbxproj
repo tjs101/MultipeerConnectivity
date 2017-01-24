@@ -135,7 +135,7 @@
 					669FF7371E35A99000C441F0 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4J67FTSTQJ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -334,12 +334,13 @@
 			baseConfigurationReference = 35F77F907D07C4494B829670 /* Pods-Peer_Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4J67FTSTQJ;
 				INFOPLIST_FILE = Peer_Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.connectivity.Peer-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = com.core.core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -349,12 +350,13 @@
 			baseConfigurationReference = DABF9A96BFACE807BFE71BC1 /* Pods-Peer_Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4J67FTSTQJ;
 				INFOPLIST_FILE = Peer_Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.connectivity.Peer-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = com.core.core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
