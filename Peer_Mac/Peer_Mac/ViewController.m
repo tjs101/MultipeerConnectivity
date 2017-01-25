@@ -132,10 +132,9 @@
 
 - (void)browser:(MCNearbyServiceBrowser *)browser lostPeer:(MCPeerID *)peerID
 {
-    MBProgressHUD *progressHud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    progressHud.mode = MBProgressHUDModeText;
-    progressHud.labelText = [NSString stringWithFormat:@"%@已失去连接", peerID.displayName];
-    [progressHud hide:YES afterDelay:2];
+    NSUserNotification *notification = [[NSUserNotification alloc] init];
+    notification.title = [NSString stringWithFormat:@"%@已失去连接", peerID.displayName];
+    [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification:notification];
     
     [self.bindPeerItems removeObject:peerID];
     
